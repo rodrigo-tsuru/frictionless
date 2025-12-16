@@ -212,3 +212,79 @@ Utilize o RICE.
 
 ---
 # Venda a estratégia para os stakeholders
+
+Pense em DevEx como produto:
+- Articule claramente os valores na linguagem que o stakeholder entende
+- Crie uma narrativa coerente sobre o propósito e valor da iniciativa
+
+---
+# Crie um FAQ rude
+
+Antecipe-se com um FAQ para as seguintes perguntas:
+- Os desenvolvedores já não estão fazendo isso?
+- Por que vocês usam essas métricas? Não é a forma como eu uso!
+
+- Crie respostas construtivas e baseadas em evidência.
+
+---
+# Iniciativa de escopo global
+Duas formas críticas de falha de implantação de DevEx:
+
+- Resolver problemas errados com execução técnica perfeita: criar soluções sem validar os problemas reais antes!
+- Resolver problemas certos com grande tecnologia, mas falhando na mudança esquecendo da estratégia de adoção.
+
+Quando argumentos econômicos não forem suficientes, apele para a dinâmica competitiva: crie métricas que motivam pela visibilidade e accountability.
+
+---
+# Iniciativa de escopo local
+Duas formas críticas de falha de implantação de DevEx:
+
+- Resolver problemas muito grandes para o escopo local: alterações que requerem coordenação entre muitos times.
+- Guardar melhorias em escala muito local: perde-se a oportunidade de multiplicar o impacto.
+
+---
+# Avalie os resultados e mostre valor
+
+- Escreva sua hipótese
+- Reporte o p50, p90 e p99
+    - p50 = experiencia típica
+    - p90 = experiencia da maioria
+    - p99 = experiencia no pior cenário
+- use análise cohort
+- veja as métricas na linha do tempo para tendências e diferenças.
+
+---
+# Prepare a apresentação de resultados
+
+- Stakeholder desenvolvedor: Foque nas melhorias do trabalho diário
+    - Economia de tempo
+    - Redução de toil
+    - Melhoria de tempo em foco
+- Stakeholder liderança: 
+    - making money: receita acelerada
+    - saving money: economia em custos
+
+---
+# Compartilhe o progresso
+
+Alinhe os resultados com o plano de comunicação da empresa.
+
+---
+# Métricas conflitantes
+
+- Tensões entre velocidade x qualidade
+- Paradoxos de adoção e produtividade
+
+Resista à tentação de focar nas métricas que apenas trazem boas notícias:
+- Peça ajuda aos desenvolvedores
+- Seja transparente
+
+---
+# Aprenda e melhore
+
+- Mantenha um repositório de resultados: wiki, dashboard ou relatório.
+- Torne o aprendizado sistemático
+
+---
+# Evoluindo e sustentando o DevEx
+
