@@ -50,17 +50,37 @@ ul {
 ---
 # Passo 1: Entendendo DevEx
 
-A experiência do desenvolvedor é um investimento voltado para a melhoria da eficácia da engenharia de software.
+A experiência do desenvolvedor (DevEx) é um investimento voltado para a melhoria da eficácia da engenharia de software.
 
 É um ciclo virtuoso: ao reduzir o **ATRITO** e o desperdício no trabalho diário dos desenvolvedores, eles conseguem entregar software de alta qualidade mais rapidamente, além de aumentar a satisfação e o engajamento.
 
+
 ---
-# Por que o DevEx importa?
+# Quem são os Devs do DevEx?
 
-A **aceleração** trazida pela IA faz o **ATRITO** ficar ainda mais caro
+- São todos os papéis envolvidos na construção do software:
+    - Engenheiros de Software
+    - Engenheiros de testes
+    - Engenheiros de build/release
+    - Papéis técnicos envolvidos na criaçao e implantação do sofware
 
-- Caso Knight Capital: **atritos** demais levaram à implantação com más-práticas e US$460 mi de prejuízo
-- Caso SaaStr.AI: delete do banco de dados via agente de IA.
+---
+# Por que o DevEx importa (em tempos de IA)?
+
+**Bom para o desenvolvedor humano → bom para a IA**
+
+Boa documentação, código organizado, feedback loops rápidos e requisitos claros.
+
+A **aceleração** trazida pela IA faz o **ATRITO** ficar ainda mais caro.
+
+## Casos de insucesso
+
+- **Knight Capital**: atritos levaram à implantação com más-práticas → US$460M de prejuízo
+- **SaaStr.AI**: delete do banco de dados via agente de IA
+
+## Caso de sucesso
+
+LinkedIn InVersion (1 deploy/mês → n deploys/dia)
 
 
 ---
@@ -84,11 +104,27 @@ A **aceleração** trazida pela IA faz o **ATRITO** ficar ainda mais caro
     - IA é uma faca de 2 gumes
 
 ---
+# Então é sobre Platform Engineering?
+
+Ambos objetivam reduzir a **carga cognitiva** e melhorar o **feedback loop**, mas o DevEx é mais geral e dá ênfase no workflow
+
+---
 # Os sintomas de um DevEx ruim
 
 - Para o negócio: demora do time-to-market
 - Para líderes: tempo de entrega indefinido, planejamento dificultado e retenção de talentos
 - Para times: Muitas reuniões para coordenar WAs, troca de contexto mental e diminuição da colaboração.
+---
+# Fricção = obstáculo do valor
+
+Fricção é aquilo que atrasa ou atrapalha a conclusão do seu trabalho.
+
+## Exemplos
+
+- Onboarding: documentação desatualizada, demora na aprovação de acessos, notebooks lentos.
+- Código-fonte: falta de abstrações e desacoplamento exigem que os desenvolvedores alterem muitos arquivos
+- Processo: aprovações múltiplas, várias iteraçoes de revisão, processo burocrático de análise de requisitos antes do código.
+- Desenvolvimento: demora no tempo de build, suites de testes eternos, "flaky tests"
 
 ---
 # Traduzindo DevEx em valor de negócio
