@@ -56,6 +56,17 @@ A experiência do desenvolvedor (DevEx) é um investimento voltado para a melhor
 
 
 ---
+# Atrito/Fricção = obstáculo do valor
+
+Fricção é aquilo que atrasa ou atrapalha a conclusão do seu trabalho.
+
+## Exemplos
+
+- Onboarding: documentação desatualizada, demora na aprovação de acessos, notebooks lentos.
+- Código-fonte: falta de abstrações e desacoplamento exigem que os desenvolvedores alterem muitos arquivos
+- Processo: aprovações múltiplas, várias iteraçoes de revisão, processo burocrático de análise de requisitos antes do código.
+- Desenvolvimento: demora no tempo de build, suites de testes eternos, "flaky tests"
+---
 # Quem são os Devs do DevEx?
 
 - São todos os papéis envolvidos na construção do software:
@@ -82,9 +93,8 @@ A **aceleração** trazida pela IA faz o **ATRITO** ficar ainda mais caro.
 
 LinkedIn InVersion (1 deploy/mês → n deploys/dia)
 
-
 ---
-# Não é sobre aumento de produtividade?
+# DevEx não é sobre aumento de produtividade?
 
 - Produtividade cria pavor, "Experiência" abre porta para o diálogo.
 
@@ -104,6 +114,27 @@ LinkedIn InVersion (1 deploy/mês → n deploys/dia)
     - IA é uma faca de 2 gumes
 
 ---
+# Feedback Loop
+Teoria de filas (Little's Law): quanto mais demorado é o feedback, mais tarefas simultâneas você precisa tocar.
+
+![Little's Law](img/Littles-Law-Parameters.webp)
+
+---
+# Flow State ("Estado de imersão")
+
+- Estado sustentado de engajamento
+- Destruída pela troca de contexto, excesso de interrupções
+- Feedback-loops efetivos são cruciais para manter o "flow". Ex: pipelines rápidos com testes automatizados
+---
+# Carga cognitiva
+
+Ex: Green-field x Brown-field
+
+![bg left 80%](img/the_life_of_swe.png)
+
+"O objetivo da arquitetura de software é minimizar a mão de obra necessária para construir e manter o sistema requerido." Robert Martin, Clean Architecture.
+
+---
 # Então é sobre Platform Engineering?
 
 Ambos objetivam reduzir a **carga cognitiva** e melhorar o **feedback loop**, mas o DevEx é mais geral e dá ênfase no workflow
@@ -114,17 +145,6 @@ Ambos objetivam reduzir a **carga cognitiva** e melhorar o **feedback loop**, ma
 - Para o negócio: demora do time-to-market
 - Para líderes: tempo de entrega indefinido, planejamento dificultado e retenção de talentos
 - Para times: Muitas reuniões para coordenar WAs, troca de contexto mental e diminuição da colaboração.
----
-# Fricção = obstáculo do valor
-
-Fricção é aquilo que atrasa ou atrapalha a conclusão do seu trabalho.
-
-## Exemplos
-
-- Onboarding: documentação desatualizada, demora na aprovação de acessos, notebooks lentos.
-- Código-fonte: falta de abstrações e desacoplamento exigem que os desenvolvedores alterem muitos arquivos
-- Processo: aprovações múltiplas, várias iteraçoes de revisão, processo burocrático de análise de requisitos antes do código.
-- Desenvolvimento: demora no tempo de build, suites de testes eternos, "flaky tests"
 
 ---
 # Traduzindo DevEx em valor de negócio
@@ -139,7 +159,7 @@ Fricção é aquilo que atrasa ou atrapalha a conclusão do seu trabalho.
 - Categorize os temas: "tempo de setup", "confusão processual","falta de documentação"
 - Visualize o workflow, ferramentas e atrito. Considere diagramas.
 - Entenda os stakeholders para uma boa comunicação e controle de expectativas
-    - Utilize o teste do veto (SVPG)
+    - Utilize o teste do veto ([SVPG](https://www.svpg.com/))
 - Compartilhe o que aprendeu
 
 ---
@@ -154,7 +174,11 @@ Escolha o projeto certo com o RICE:
 # Exercicio RICE
 
 
-![width:80%](img/rice.png)
+| Item| Reach | Impact | Confidence | Effort |
+|---|---|---|---|---|
+| (A) Flaky test automation | High | High | Medium | High |
+| (B) Streamlined code review process | High | High | High | Low |
+| (C) Monitoring dashboards | Medium | Medium | High | Medium |
 
 ---
 # Compartilhe early-wins para ganhar tração
@@ -204,12 +228,7 @@ Produtos consagrados devem ter pelo menos **40%** de resposta "Muito decepcionad
 - Evite a fadiga de pesquisas (15min max a cada 3~6 meses)
 
 ---
-# Invista em dados sistêmicos
 
-- Comece com 80% de pesquisas e 20% de dados sistêmicos.
-- Evite a fadiga de pesquisas (15min max a cada 3~6 meses)
-
----
 # Como a IA afeta os dados que você precisa?
 
 Uma vez que a IA entra no workflow de desenvolvimento considere:
@@ -225,13 +244,6 @@ Tempos de execução dos conjuntos de testes com mediana de 5 minutos, mas médi
 
 LinkedIn mostra apenas os dados necessários: os valores atuais e o que mudou.
 
----
-# Tornando os dados acionáveis
-
-Tempos de execução dos conjuntos de testes com mediana de 5 minutos, mas média de 12 minutos → Investigar testes "flaky" ​​ou contenção de recursos.
-
-LinkedIn mostra apenas os dados necessários: os valores atuais e o que mudou.
-
 Às vezes é necessário fazer parceria com "Cientista de Dados"
 
 ---
@@ -239,12 +251,19 @@ LinkedIn mostra apenas os dados necessários: os valores atuais e o que mudou.
 
 Utilize o RICE.
 
-"As pessoas pensam que foco significa dizer sim àquilo em que você precisa se concentrar. Mas não é nada disso. Significa dizer não às outras centenas de boas ideias que existem. Você precisa escolher com cuidado. Na verdade, tenho tanto orgulho das coisas que não fizemos quanto das que fizemos. Inovação é dizer não a mil coisas." - Steve Jobs
+"As pessoas pensam que foco significa dizer sim àquilo em que você precisa se concentrar. Mas não é nada disso. Significa dizer não às outras centenas de boas ideias que existem. Você precisa escolher com cuidado. Na verdade, tenho tanto orgulho das coisas que não fizemos quanto das que fizemos. 
+**Inovação é dizer não a mil coisas**." - Steve Jobs
 
 ---
 # Assesment Cloudtech
 
-![width:500px](img/cloudtech.png)
+| Challenge | RICE score | Business Value | Collective Action | Timeline | Is a Constraint | Team Goals |
+|---|---|---|---|---|---|---|
+| Manual deployments | 1,275 (highest) | High | Collective | Medium | High | High |
+| Build times | 183 | High | Collective and local | Low | High | Low |
+| Flaky tests | 75 | Medium | Collective and local | Low | Medium | High |
+| Onboarding docs | 53 (lowest) | Medium | Local | High | Low | High |
+| Local environments | 120 | Low | Local | High | Low | Medium |
 
 ---
 # Venda a estratégia para os stakeholders
@@ -263,7 +282,7 @@ Antecipe-se com um FAQ para as seguintes perguntas:
 - Crie respostas construtivas e baseadas em evidência.
 
 ---
-# Iniciativa de escopo global
+# Iniciativa de escopo global (organizacional)
 Duas formas críticas de falha de implantação de DevEx:
 
 - Resolver problemas errados com execução técnica perfeita: criar soluções sem validar os problemas reais antes!
@@ -281,12 +300,12 @@ Duas formas críticas de falha de implantação de DevEx:
 ---
 # Avalie os resultados e mostre valor
 
-- Escreva sua hipótese
+- Escreva sua hipótese (o que você espera e porquê)
 - Reporte o p50, p90 e p99
     - p50 = experiencia típica
     - p90 = experiencia da maioria
     - p99 = experiencia no pior cenário
-- use análise cohort
+- use análise cohort (time, experiência, áreas)
 - veja as métricas na linha do tempo para tendências e diferenças.
 
 ---
@@ -320,7 +339,11 @@ Resista à tentação de focar nas métricas que apenas trazem boas notícias:
 
 - Mantenha um repositório de resultados: wiki, dashboard ou relatório.
 - Torne o aprendizado sistemático
+- Ajude também o KTLO. O desafio é que frequentemente este trabalho é invisível para os stakeholders até algo quebrar.
 
 ---
 # Evoluindo e sustentando o DevEx
 
+- Torne o DevEx uma missão de todos.
+
+Na Atlassian 10% do tempo é utilizado para "melhorar coisas que deixam seu dia um saco"
